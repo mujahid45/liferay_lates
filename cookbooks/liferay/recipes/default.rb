@@ -79,11 +79,9 @@ cookbook_file "#{node['liferay']['path']}/deploy/licence.xml" do
 end
 
 bash "reload the system daemon" do
-  user 'weloadm'
   code <<-EOH
      systemctl daemon-reload
     EOH
- not_if { ::Dir.exists?(node['ehcache']['path']) }
 end
 
 
