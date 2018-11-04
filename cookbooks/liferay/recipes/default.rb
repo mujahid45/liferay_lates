@@ -22,8 +22,8 @@ end
 ruby_block 'Set JAVA_HOME in catalina' do
     block do
       file = Chef::Util::FileEdit.new("#{node['tomcat']['path']}/bin/catalina.sh")
-      file.insert_line_if_no_match(/export JAVA_HOME=/, "export JAVA_HOME=#{node['java']['java_home']}")
-      file.insert_line_if_no_match(/export JRE_HOME=/, "export JRE_HOME=#{node['java']['jre_home']}")
+      file.insert_line_if_no_match(/JAVA_HOME=/, "JAVA_HOME=#{node['java']['java_home']}")
+      file.insert_line_if_no_match(/JRE_HOME=/, "JRE_HOME=#{node['java']['jre_home']}")
       file.write_file
     end
   end

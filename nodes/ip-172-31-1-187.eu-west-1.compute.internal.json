@@ -217,24 +217,24 @@
         "surplus": "0"
       },
       "total": "3879576kB",
-      "free": "662188kB",
-      "available": "2594628kB",
+      "free": "2218004kB",
+      "available": "2626312kB",
       "buffers": "1072kB",
-      "cached": "2079032kB",
-      "active": "2269216kB",
-      "inactive": "647308kB",
-      "dirty": "100kB",
+      "cached": "577968kB",
+      "active": "1079300kB",
+      "inactive": "335672kB",
+      "dirty": "151768kB",
       "writeback": "0kB",
-      "anon_pages": "836484kB",
-      "mapped": "42404kB",
-      "slab": "232668kB",
-      "slab_reclaimable": "141680kB",
-      "slab_unreclaim": "90988kB",
-      "page_tables": "5604kB",
+      "anon_pages": "835964kB",
+      "mapped": "39116kB",
+      "slab": "171248kB",
+      "slab_reclaimable": "95552kB",
+      "slab_unreclaim": "75696kB",
+      "page_tables": "5684kB",
       "nfs_unstable": "0kB",
       "bounce": "0kB",
       "commit_limit": "1939788kB",
-      "committed_as": "992404kB",
+      "committed_as": "994960kB",
       "vmalloc_total": "34359738367kB",
       "vmalloc_used": "19004kB",
       "vmalloc_chunk": "34359709436kB",
@@ -406,16 +406,16 @@
           "eth0": {
             "tx": {
               "queuelen": "1000",
-              "bytes": "79253644",
-              "packets": "1147657",
+              "bytes": "115972615",
+              "packets": "1682778",
               "errors": "0",
               "drop": "0",
               "carrier": "0",
               "collisions": "0"
             },
             "rx": {
-              "bytes": "3705207614",
-              "packets": "2489475",
+              "bytes": "5644074775",
+              "packets": "3804817",
               "errors": "0",
               "drop": "0",
               "overrun": "0"
@@ -435,10 +435,10 @@
     "platform": "redhat",
     "platform_version": "7.5",
     "platform_family": "rhel",
-    "uptime_seconds": 8269,
-    "uptime": "2 hours 17 minutes 49 seconds",
-    "idletime_seconds": 16079,
-    "idletime": "4 hours 27 minutes 59 seconds",
+    "uptime_seconds": 86204,
+    "uptime": "23 hours 56 minutes 44 seconds",
+    "idletime_seconds": 171774,
+    "idletime": "1 day 23 hours 42 minutes 54 seconds",
     "virtualization": {
       "systems": {
         "xen": "guest"
@@ -1245,12 +1245,12 @@
       "by_device": {
         "/dev/xvda2": {
           "kb_size": "31444972",
-          "kb_used": "4022624",
-          "kb_available": "27422348",
-          "percent_used": "13%",
+          "kb_used": "2475216",
+          "kb_available": "28969756",
+          "percent_used": "8%",
           "total_inodes": "15727552",
-          "inodes_used": "94962",
-          "inodes_available": "15632590",
+          "inodes_used": "85437",
+          "inodes_available": "15642115",
           "inodes_percent_used": "1%",
           "fs_type": "xfs",
           "mount_options": [
@@ -1501,12 +1501,12 @@
       "by_mountpoint": {
         "/": {
           "kb_size": "31444972",
-          "kb_used": "4022624",
-          "kb_available": "27422348",
-          "percent_used": "13%",
+          "kb_used": "2475216",
+          "kb_available": "28969756",
+          "percent_used": "8%",
           "total_inodes": "15727552",
-          "inodes_used": "94962",
-          "inodes_available": "15632590",
+          "inodes_used": "85437",
+          "inodes_available": "15642115",
           "inodes_percent_used": "1%",
           "fs_type": "rootfs",
           "mount_options": [
@@ -1562,12 +1562,12 @@
         },
         "/run": {
           "kb_size": "1939788",
-          "kb_used": "16848",
-          "kb_available": "1922940",
+          "kb_used": "16852",
+          "kb_available": "1922936",
           "percent_used": "1%",
           "total_inodes": "484947",
-          "inodes_used": "375",
-          "inodes_available": "484572",
+          "inodes_used": "376",
+          "inodes_available": "484571",
           "inodes_percent_used": "1%",
           "fs_type": "tmpfs",
           "mount_options": [
@@ -1938,13 +1938,13 @@
         "/dev/xvda2,/": {
           "device": "/dev/xvda2",
           "kb_size": "31444972",
-          "kb_used": "4022624",
-          "kb_available": "27422348",
-          "percent_used": "13%",
+          "kb_used": "2475216",
+          "kb_available": "28969756",
+          "percent_used": "8%",
           "mount": "/",
           "total_inodes": "15727552",
-          "inodes_used": "94962",
-          "inodes_available": "15632590",
+          "inodes_used": "85437",
+          "inodes_available": "15642115",
           "inodes_percent_used": "1%",
           "fs_type": "xfs",
           "mount_options": [
@@ -2000,13 +2000,13 @@
         "tmpfs,/run": {
           "device": "tmpfs",
           "kb_size": "1939788",
-          "kb_used": "16848",
-          "kb_available": "1922940",
+          "kb_used": "16852",
+          "kb_available": "1922936",
           "percent_used": "1%",
           "mount": "/run",
           "total_inodes": "484947",
-          "inodes_used": "375",
-          "inodes_available": "484572",
+          "inodes_used": "376",
+          "inodes_available": "484571",
           "inodes_percent_used": "1%",
           "fs_type": "tmpfs",
           "mount_options": [
@@ -2442,7 +2442,7 @@
       "search-state-factory": "/usr/local/share/factory/var",
       "search-configuration": "/root/.config"
     },
-    "ohai_time": 1541258730.0212529,
+    "ohai_time": 1541336664.9980702,
     "packages": {
       "dbus-glib": {
         "epoch": "0",
@@ -3228,13 +3228,6 @@
         "installdate": "1521826921",
         "arch": "x86_64"
       },
-      "chef": {
-        "epoch": "0",
-        "version": "14.6.47",
-        "release": "1.el7",
-        "installdate": "1541251267",
-        "arch": "x86_64"
-      },
       "libestr": {
         "epoch": "0",
         "version": "0.1.9",
@@ -3275,6 +3268,13 @@
         "version": "2.7.5",
         "release": "68.el7",
         "installdate": "1521826929",
+        "arch": "x86_64"
+      },
+      "chef": {
+        "epoch": "0",
+        "version": "14.6.47",
+        "release": "1.el7",
+        "installdate": "1541336661",
         "arch": "x86_64"
       },
       "libblkid": {
@@ -5053,7 +5053,7 @@
       "ULONG_MAX": 18446744073709551615,
       "USHRT_MAX": 65535,
       "WORD_BIT": 32,
-      "_AVPHYS_PAGES": 164094,
+      "_AVPHYS_PAGES": 552882,
       "_NPROCESSORS_CONF": 2,
       "_NPROCESSORS_ONLN": 2,
       "_PHYS_PAGES": 969894,
