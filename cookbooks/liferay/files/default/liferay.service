@@ -1,0 +1,18 @@
+[Unit]
+Description=Liferay Tomcat service
+After=syslog.target network.target
+
+[Service]
+Type=forking
+ExecStart=/opt/SP/weloadm/software/liferay-ce-portal-7.0-ga3/tomcat-8.0.32/bin/startup.sh
+ExecStop=/opt/SP/weloadm/software/liferay-ce-portal-7.0-ga3/tomcat-8.0.32/bin/shutdown.sh
+Restart=always
+User=root
+Group=root
+StandardOutput=syslog
+StandardError=syslog
+SyslogIdentifier=liferay
+
+[Install]
+WantedBy=multi-user.target
+
