@@ -66,10 +66,7 @@ cookbook_file "#{node['liferay']['path']}/deploy/licence.xml" do
   action :create
 end
 
-bash "start the service " do
+execute 'start the service' do
   user 'weloadm'
-  code <<-EOH
-     sh /opt/SP/weloadm/software/liferay-ce-portal-7.0-ga3/tomcat-8.0.32/bin/shutdown.sh
-    EOH
+  command '/opt/SP/weloadm/software/liferay-ce-portal-7.0-ga3/tomcat-8.0.32/bin/startup.sh'
 end
-
