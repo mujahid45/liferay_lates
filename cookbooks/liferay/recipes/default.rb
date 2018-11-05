@@ -85,15 +85,14 @@ end
 
 #######################Reload the systemd daemon ################################
 
-bash "reload the system daemon" do
+bash "start the service" do
   code <<-EOH
-     systemctl daemon-reload
-	 sh /opt/SP/weloadm/software/liferay-ce-portal-7.0-ga3/tomcat-8.0.32/bin/startup.sh
+      sh /opt/SP/weloadm/software/liferay-ce-portal-7.0-ga3/tomcat-8.0.32/bin/startup.sh
     EOH
 end
 
 
-service 'liferay' do
-  action [:enable, :start]
-end
+#service 'liferay' do
+#  action [:enable, :start]
+#end
 
