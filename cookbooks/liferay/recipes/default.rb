@@ -37,14 +37,14 @@ ruby_block 'Set JAVA_HOME in startup' do
     end
   end
 
-#ruby_block 'Set JAVA_HOME in setenv.sh' do
-#    block do
-#      file = Chef::Util::FileEdit.new("#{node['tomcat']['path']}/bin/setenv.sh")
-#      file.insert_line_if_no_match(/JAVA_HOME=/, "JAVA_HOME=#{node['java']['java_home']}")
-#      file.insert_line_if_no_match(/JRE_HOME=/, "JRE_HOME=#{node['java']['jre_home']}")
-#      file.write_file
-#    end
-#  end
+ruby_block 'Set JAVA_HOME in setenv.sh' do
+    block do
+      file = Chef::Util::FileEdit.new("#{node['tomcat']['path']}/bin/setenv.sh")
+      file.insert_line_if_no_match(/JAVA_HOME=/, "JAVA_HOME=#{node['java']['java_home']}")
+      file.insert_line_if_no_match(/JRE_HOME=/, "JRE_HOME=#{node['java']['jre_home']}")
+      file.write_file
+    end
+  end
 
 remote_file "#{tmp_path}/ehcache.tar.gz" do
   source node['ehcache']['download_url']
