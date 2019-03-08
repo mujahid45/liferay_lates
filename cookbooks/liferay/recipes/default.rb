@@ -87,6 +87,7 @@ end
 
 bash "start the service" do
   code <<-EOH
+      sh /opt/SP/weloadm/software/liferay-ce-portal-7.0-ga3/tomcat-8.0.32/bin/startup.sh
       /bin/su -c "sh /opt/SP/weloadm/software/liferay-ce-portal-7.0-ga3/tomcat-8.0.32/bin/startup.sh" - weloadm
     EOH
 end
